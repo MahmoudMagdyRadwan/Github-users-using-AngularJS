@@ -1,0 +1,39 @@
+<html lang="en" ng-app="Github users">
+
+		<head>
+			<meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Github users</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css">
+            <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+		  	<link rel="stylesheet" href="styles/style.css"/>
+		  			  	
+		</head>
+
+		<body background="landing-background.jpg">
+	     <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <a href="/" class="navbar-brand"><img class="logoImg" src="githublogo.png" alt="GitHub" /></a>
+                <h4 style="display: inline;float:left;" >Github users</h4>
+                <h5 ng-bind="title"></h5>
+              <ul class="nav navbar-nav" style="float:right;font-weight:bold;">
+                <li  ng-class="{active: activetab=='/'}"><a href="#/">Home</a></li>
+                <li  ng-class="{active: activetab=='/users'}"><a href="#/users">Users</a></li>
+                <li  ng-class="{active: activetab=='/about'}"><a href="#/about">About</a></li>
+              </ul>
+            </div>
+         </div> 
+	    
+	    <div ng-view></div>
+		
+			<script src="scripts/lib/angular.js"></script>
+			<script src="scripts/lib/angular-route.js"></script>
+			<script src="scripts/app.js"></script>
+			<script src="scripts/routes.js"></script>
+			<script src="scripts/controllers/aboutController.js"></script>
+			<script src="scripts/controllers/homeController.js"></script>
+			<script src="scripts/controllers/usersController.js"></script>
+
+		</body>
+</html>
