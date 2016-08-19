@@ -16,6 +16,12 @@ app.config(function($routeProvider){
              title: 'Users'
                 
         })
+        .when('/users/:id', {
+             templateUrl : 'views/userdetails.html',
+             controller  : 'usersController',
+             title: 'User Info'
+                
+        })
         .when('/about', {
              templateUrl : 'views/about.html',
              controller  : 'aboutController',
@@ -23,7 +29,7 @@ app.config(function($routeProvider){
                 
         })
         .otherwise({
-        		redirectTo: 'views/home.html'
+        		redirectTo: '/'
         });
 
 }).run(['$rootScope', '$location','$route', function($rootScope, $location,$route){
