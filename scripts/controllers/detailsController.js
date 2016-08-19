@@ -12,10 +12,7 @@ $http({
         })
         .success(function(data) {
             $scope.result = data;
-            console.log(data);
-            
-            })
-
-        } 
+ })
+ } 
 
 
