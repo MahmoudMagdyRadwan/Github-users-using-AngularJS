@@ -31,7 +31,6 @@ app.config(function($routeProvider){
         .otherwise({
         		redirectTo: '/'
         });
-
 }).run(['$rootScope', '$location','$route', function($rootScope, $location,$route){
    var path = function() { return $location.path();};
    $rootScope.$watch(path, function(newVal, oldVal){
