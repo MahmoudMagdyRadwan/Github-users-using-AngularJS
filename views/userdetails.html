@@ -1,0 +1,27 @@
+<div ng-controller="detailsController"> 
+   <div >
+        <h1 align="center">User Info</h1> 
+   </div> 
+   <hr>
+   <div align="center">
+       <img src="{{result.avatar_url}}}" class="img">
+    </div>  
+    <hr>               
+    <div>
+      <br>
+        	<h1 align="center">
+               Name: {{result.name}}
+            </h1>
+        	<hr>
+        	<div>
+            <h1 align="center">
+               Email: {{result.email}}
+
+            </h1>
+            <h1 align="center">ID:{{result.id}}</h1>
+            <h1 align="center">Created At:{{result.created_at}}</h1>
+            </div>
+            
+        </div>
+                    
+</div>
