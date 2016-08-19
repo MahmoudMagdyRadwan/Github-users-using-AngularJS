@@ -16,10 +16,6 @@ function usersController($scope, $http){
   $scope.limit = $scope.details.length
 }
  })
-
-    
-
-    
 }
 
 
