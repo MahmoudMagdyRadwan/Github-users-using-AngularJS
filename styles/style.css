@@ -1,6 +1,10 @@
 body {
   background-color:#edeff0;
 }
+
+h1{ 
+    font-family: "SIMPSON";
+    color:white;}
 a {
   color: #1081de;
   text-decoration: none; 
@@ -28,36 +32,6 @@ a:hover, a:active, a:focus {
 }
 element.style {
     margin-top: 136px;
-}
-.devsite-header-no-upper-tabs .devsite-article-inner, .devsite-header-no-upper-tabs .devsite-main-content {
-    min-height: calc(100vh - 526px);
-}
-.devsite-article-inner, .devsite-main-content {
-    min-height: calc(100vh - 594px);
-}
-.devsite-main-content {
-    margin: 40px auto;
-    max-width: 1400px;
-    padding: 0 24px;
-    position: relative;
-}
-body, div, dl, dd, form, img, input, figure, menu {
-    margin: 0;
-    padding: 0;
-}
-
-div {
-    display: block;
-}
-body, html {
-    color: #212121;
-    font: 400 16px/24px Roboto,sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
 
 
