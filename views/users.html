@@ -1,6 +1,6 @@
 <div ng-controller="usersController">
 	<div class="col-md-2 col-sm-2">
-	    <div class="panel panel-default side-check-panel">
+	    <div class="panel panel-default side-panel">
 	        
 	        <div class="panel-heading text-center" style="padding:6px;">
 	        	<h5 style="margin:0px;">Users List</h5>
@@ -8,13 +8,11 @@
 
 	        <div class="panel-body">
 	          <ul class="list-unstyled">
-	            <li ng-repeat="info  in details | limitTo:limit">
-	            	<h5>
-	            		<a >
-	            		{{info.login}}
-	            	</a>
-	            </h5>
-	        </li>
+	            <li ng-repeat="info in details | limitTo:limit">
+	            	{{info.id}}
+	            	<a href="#/users/{{info.id}}" >{{info.login}}</a>
+	            <img src="{{info.avatar_url}}}" style='height:25%;width:25%;display:inline;object-fit: contain' />
+	            </li>
 	          </ul>
 	        </div>
 
@@ -23,66 +21,18 @@
 	        </div>
 
 	    </div>
-	</div>
-    
-    <div class="col-md-8 col-sm-8">
-      <div class="panel ">
-
-        <div class="panel-heading">
-          <h3>User Info</h3>
-        </div>
- <!-- 
-        <div class="panel-body">
-            <div ng-repeat="info in details">
-              <div class="col-md-12 col-sm-12 title-to-snippet">
-                <div class="row lang-snip-row">
-                  
-                  <div class="col-md-8 col-sm-8" style="padding-left:0;">
-                    <div class="row">
-                      <div class="col-md-12 col-sm-12">
-                        <a class="explore-anchor" ng-href="/snippet/{{snippet.snippet_id}}">
-                          <h4 class="snip-title">
-                            {{snippet.title}}
-                          </h4>
-                        </a>
-                      </div>
-                    </div>
-                    
-                  </div>
-         
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="tab-pane fade" id="tab2primary" ng-init="fetchQuestions()">
-            <div ng-repeat="question in questions | orderBy: '-count'">
-              <div class="col-md-12 col-sm-12 title-to-snippet">
-                <div class="row lang-snip-row">
-                  <div class="col-md-2 col-sm-2" style="line-height:normal;">
-                    <b class="side-info">{{question.views}}</b>
-                    <span class="side-info"> Views</span>
-                    <br>
-                    <b class="side-info">{{question.count_answers}}</b>
-                    <span class="side-info"> Answers</span>
-                  </div>
-                  <div class="col-md-8 col-sm-8" style="padding-left:0;">
-                    <div class="row">
-                      <div class="col-md-12 col-sm-12">
-                        <a class="explore-anchor" ng-href="question/{{question.question_id}}">
-                          <h4 class="snip-title">
-                            {{question.title}}
-                          </h4>
-                        </a>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-          </div>
-      </div>
-      </div>-->
-      </div>
+	    
+	
+    </div>
+    <div></div>
+</div>
+<!--    
+<div class="col-md-8 col-sm-8">
+      <div><h3>{{information.login}}</h3></div>
+      <div>{{information.id}}</div>
  
     </div>
+
+    
+</div>
+ng-include="'views/userdetails.html'"-->
