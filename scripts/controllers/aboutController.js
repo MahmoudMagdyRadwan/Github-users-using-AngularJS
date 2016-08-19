@@ -9,9 +9,4 @@ function aboutController($scope, $http){
 $http.get('scripts/data.json').success(function(data){
     $scope.details=data;
 });
-
-
-
-
-    
 }
